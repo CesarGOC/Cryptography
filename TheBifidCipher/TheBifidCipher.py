@@ -132,7 +132,7 @@ def decrypt(mensaje):
 def main():
     print("          ****The Bifid cipher****")
     print("-----------------------------------------")
-    print("@autor: Guadarrama Ortega Cesar Alejandro")
+    print("@autor: BITPLANET")
     print("-----------------------------------------")
     print("Matriz con llave:ENCRYPT ")
     print(matriz)
