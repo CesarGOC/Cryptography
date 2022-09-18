@@ -1,4 +1,4 @@
-#Autor: Guadarrama Ortega Cesar Alejandro
+#Autor: BITPLANET
 
 # importamos la librería numpy, y le damos como nombre np dentro del programa
 import numpy as np
