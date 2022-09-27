@@ -33,7 +33,7 @@ def listaPlana(datos):
     for item in datos:
         listaPlana+= item
     return listaPlana
-#Funcion que castea de un String a una lista de caracteres  
+    
 def separarTexto(texto):
     lista = []
     for i in texto:
@@ -42,7 +42,6 @@ def separarTexto(texto):
     print(lista)
     return lista
 
-#Funcion que busca la fila y columna de cada caracter
 def encontrarFilaColumna(lista):
     listaFilaColumna=[]
     for i in lista:
@@ -55,11 +54,11 @@ def encontrarFilaColumna(lista):
             numeroFilaColumna[1]=numeroFilaColumna[1]-1
             listaFilaColumna.append(numeroFilaColumna)
     return listaFilaColumna
-#Funcion que divide la lista en dos listas del mismo tamanio
+
 def dividir_lista(lista):
     half = len(lista)//2
     return lista[:half], lista[half:]
-#Funcion que junta las dos listas y crea una lista de sublistas
+
 def juntar_listas(lista1,lista2):
     combinacion=[]
     combinacionLista=[]
@@ -96,7 +95,6 @@ def encrypt(mensaje):
         textoCifrado+=matriz[fila,columna]
     print("Texto cifrado: "+textoCifrado)
 
-#Funcion de desencriptar
 def decrypt(mensaje):
     #Variables
     lista = []
@@ -131,7 +129,6 @@ def decrypt(mensaje):
         textoDecifrado+=matriz[fila,columna]
     print("Texto desifrado: "+textoDecifrado)
     
-#Funcion principal del programa
 def main():
     print("          ****The Bifid cipher****")
     print("-----------------------------------------")
@@ -142,10 +139,10 @@ def main():
     while True:
         print("          ****The Bifid cipher****")
         print("-----------------------------------------")
-        instruccion=input("¿Que quieres hacer Cifrar, Descifrar o Salir?: ")
+        instruccion=input("¿Que quieres hacer Cifrar, Decifrar o Salir?: ")
         if instruccion == "Cifrar":
             encrypt(input("Introduce el mensaje a cifrar: "))
-        elif instruccion =="Descifrar":
+        elif instruccion =="Decifrar":
             decrypt(input("Introduce el mensaje a decifrar: "))
         elif instruccion =="Salir":
             break
